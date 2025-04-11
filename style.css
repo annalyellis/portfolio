@@ -27,11 +27,11 @@ nav a.current {
   padding-bottom: 0.4em;
 }
 
-nav a.hover {
-  border-bottom-width: 0.4.em;
+nav a:hover {
+  border-bottom-width: 0.4em;
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
-  padding-bottom: 0.4 em;
+  padding-bottom: 0.4em;
 }
 
 body {
