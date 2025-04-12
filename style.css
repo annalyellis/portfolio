@@ -55,6 +55,15 @@ form label {
 
 form button[type = 'submit'] {
   grid-column: 1 / -1;
+  padding : 1em;
+  background-color: var(--color-accent-lighter); 
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  opacity: 0.8;
 }
 
 body {
@@ -65,4 +74,9 @@ body {
     max-width: 100ch;
     margin-inline: auto;
     padding: 10px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   }
