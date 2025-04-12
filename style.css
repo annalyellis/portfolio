@@ -56,9 +56,9 @@ form label {
 form button[type = 'submit'] {
   grid-column: 1 / -1;
   padding : 1em;
-  background-color: var(--color-accent-lighter); 
+  background-color: var(--color-accent); 
   color: white;
-  border: none;
+  border: white;
   cursor: pointer;
 }
 
@@ -118,4 +118,55 @@ body {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     text-wrap: balance;
+  }
+
+  /* resume styling */
+  .section-header {
+    border-left: 0.3em solid var(--color-accent);
+    padding-left: 0.5em;
+    margin-top: 2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: oklch(35% 10% 0); /* darker shade for contrast */
+  }
+
+  #experience article, #projects article {
+    background-color: oklch(98% 0.01 0);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px oklch(80% 0.03 0 / 0.2);
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #experience article:hover, #projects article:hover {
+    transform: translateY(-3px);
+  }
+
+  .job-title {
+    font-weight: bold;
+    color: var(--color-accent);
+  }
+  
+  .company {
+    font-style: italic;
+    color: oklch(45% 5% 0);
+  }
+
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  section:nth-of-type(2) { animation-delay: 0.1s; }
+  section:nth-of-type(3) { animation-delay: 0.2s; }
+  section:nth-of-type(4) { animation-delay: 0.3s; }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
