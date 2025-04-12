@@ -40,8 +40,21 @@ button{
   font:inherit;
 }
 
-.wrapper {
+form {
+  grid-column: 2 / 3;
   display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+form label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+form button[type = 'submit'] {
+  grid-column: 1 / -1;
 }
 
 body {
