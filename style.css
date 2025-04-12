@@ -77,6 +77,36 @@ body {
   }
 
   .projects {
+    grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1.5em;
+    padding: 1em;
+  }
+
+  .projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    border: 1px solid #ddd;
+    padding: 1.25em;
+    border-radius: 5px;
+  }
+
+  .projects article h2{
+    margin: 0;
+  }
+
+  .projects article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    background-color: #eee;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+  }
+
+  .projects article p {
+    line-height: 1.6;
   }
