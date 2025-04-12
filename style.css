@@ -40,34 +40,8 @@ button{
   font:inherit;
 }
 
-label {
-  display: block;
-  margin-bottom: 0.5em;
-}
-
-input[type='email'],
-input[type = 'text']{
-  display: block;
-  width: 100%;
-  padding: 0.7em;
-  margin-bottom: 1em;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  min-height: 150px;
-}
-
-button[type="submit"] {
-  display: block;
-  width: 100%; 
-  padding: 1em;
-  background-color: var(--color-accent); 
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  opacity: 0.8; 
+.wrapper {
+  display: grid;
 }
 
 body {
