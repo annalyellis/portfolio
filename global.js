@@ -22,7 +22,6 @@ let pages = [
   { url: 'cv/', title: 'Resume'},
   { url: 'contact/', title: 'Contact'},
   { url: 'https://github.com/annalyellis', title: 'GitHub'}
-  // add the rest of your pages here
 ];
 
 let nav = document.createElement('nav');
@@ -30,7 +29,7 @@ document.body.prepend(nav);
 
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  
-  : "/website/";         
+  : "/portfolio/";         
 
 for (let p of pages) {
   let url = p.url;
