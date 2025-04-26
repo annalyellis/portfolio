@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Flavors of Data: A Recipe Analytics Project",
+        "year": 2025,
+        "image": "../images/recipes.png",
+        "description": "Exploratory data analysis, hypothesis testing, regression modeling, and fairness analysis on recipe data. Investigates how protein content in recipes relates to their preparation time."
+    },
+    {
+        "title": "Visualization of Processing by Food Group",
+        "year": 2025,
+        "image": "../images/foodpro.png",
+        "description": "A violin plot of the distribution of food processing in each of the 5 major food groups."
+    },
+    {
+        "title": "N-Gram Language Model",
+        "year": 2025,
+        "image": "../images/N-gram.png",
+        "description": "Uniform (each unique token is equally likely to appear in any position), unigram (probability distribution is the empirical distribution of tokens in the corpus), and N-Gram (depends on nearby tokens) language models."
+    },
+    {
+        "title": "Persuasive Visualization",
+        "year": 2025,
+        "image": "../images/misleading.png",
+        "description": "Side by side comparison of two visualizations of similar data, highlighting the role of design in conveying meaning and raising questions about what constitutes 'truthful' representation in data storytelling. "
+    },
+    {
+        "title": "Missingnes Mechanisms and Analytical Pitfalls of Financial Data",
+        "year": 2025,
+        "image": "../images/finance.png",
+        "description": "Analysis of financial data to investigate missingness mechanisms through hypothesis testing and uncover instances of Simpson's Paradox. Rigorous statistical reasoning and data interpretation to address bias and ensure accurate insights."
+    },
+    {
+        "title": "Modeling Transportation Wait Times and Route Optimization",
+        "year": 2025,
+        "image": "../images/transportation.png",
+        "description": "Exploration of the Waiting Time Paradox using San Diego MTS bus data by simulating Poisson-distributed arrival times and analyzing waiting time distribution. Breadth-First Search algorithm to find the shortest paths between stops in the MTS bus network."
+    },
+    {
+        "title": "Front-End Sustainability Website Project",
+        "year": 2024,
+        "image": "../images/sustainability.png",
+        "description": "Interactive, responsive website to educate users on climate change developed by a team of five women. Intended to empower individuals to shift to a sustainable lifestyle through practical methods and resources."
+    },
+    {
+        "title": "Glacier Calving in Greenland and Global Seismic Activity",
+        "year": 2024,
+        "image": "../images/glaciers.png",
+        "description": "Python-based workflow to catalog and predict glacier calving events across Greenland and link calving events to global seismic activity."
+    },
+    {
+        "title": "KNN Image Classificaiton System",
+        "year": 2024,
+        "image": "../images/classification.jpeg",
+        "description": "Image classification system using k-Nearest Neighbors (KNN) algorithm, where images are classified based on their pixel differences from labeled training data. Includes an image manipulation system to preprocess and enhance images for better classification performance."
+    },
+    {
+        "title": "Data-Driven Exploration of Meteorite Landings",
+        "year": 2023,
+        "image": "../images/meteorite.png",
+        "description": "Investigates global meteorite landings hrough interactive mapping, probability modeling, and hypothesis testing. Uses simulation, permutation tests, and bootstrapping to explore whether observed patterns in meteorite location and mass are due to chance or reflect meaningful differences across continents. "
+    },
+    {
+        "title": "Music Analytics and Recommendation System Using Spotify Data",
+        "year": 2023,
+        "image": "../images/spotify.png",
+        "description": "Exploration of Spotify data through data visualization, sentiment analysis, and audio feature comparison. Includes  interactive tools like a song recommender based on Euclidean distance, a lyric search engine, and keyword extraction to summarize songs."
+    },
+    {
+        "title": "Markov Chain Chatbot",
+        "year": 2023,
+        "image": "../images/irwin.HEIC",
+        "description": "A voice-responsive system using a Markov chain and a Raspberry Pi for real-time conversational interactions. Probabilistic language model to generate repsonses based on user input. Adorable carboard external structure."
+    }
+]

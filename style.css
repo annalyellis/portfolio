@@ -2,7 +2,6 @@ html {
   color-scheme: light dark;
   --color-accent: oklch(65% 50% 0);
   accent-color: var(--color-accent);
-  /* background-color: oklch(from var(--color-accent) 95% 5% h); */
   background-color: canvas;
   color: canvastext;
 }
@@ -215,4 +214,26 @@ section:nth-of-type(4) {
   right: 1rem;
   font-size: 80%;
   font-family: inherit;
+}
+
+
+
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+  text-align: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#profile-stats dt {
+  grid-row: 1; /* Place all <dt> elements on the first row */
+  font-weight: bold;
+}
+
+#profile-stats dd {
+  grid-row: 2; /* Place all <dd> elements on the second row */
+  margin: 0; /* Reset default margins */
+  font-size: 1.2rem;
 }
