@@ -68,7 +68,7 @@
     {
         "title": "Markov Chain Chatbot",
         "year": 2023,
-        "image": "../images/irwin.HEIC",
+        "image": "../images/irwin.jpg",
         "description": "A voice-responsive system using a Markov chain and a Raspberry Pi for real-time conversational interactions. Probabilistic language model to generate repsonses based on user input. Adorable carboard external structure."
     }
 ]
