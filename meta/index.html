@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type = "module" src = "../global.js"></script>
+    <style>
+        body {
+          font-family: sans-serif;
+          padding: 2rem;
+        }
+    
+        .summary {
+          display: flex;
+          gap: 2rem;
+          margin-top: 2rem;
+        }
+    
+        .stat {
+          text-align: left;
+        }
+    
+        .stat-label {
+          font-size: 0.75rem;
+          color: #6b7280;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+    
+        .stat-value {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #ff0088;
+        }
+        circle {
+            transition: 200ms;
+            transform-origin: center;
+            transform-box: fill-box;
+        }
+
+        circle:hover {
+            transform: scale(1.5);
+        }
+        .tooltip {
+            color: #111 !important; /* dark gray text */
+            background-color: #fff; /* make sure background is white for contrast */
+            font-size: 0.9rem;
+        }
+        .tooltip a {
+            color: #444 !important; /* darker link color */
+            text-decoration: underline;
+        }
+        text {
+            fill: #ff0088;
+        }
+        circle.selected {
+            stroke: orange;
+            stroke-width: 3px;
+            fill-opacity: 1;
+        }
+        circle.selected {
+            fill: #ff6b6b;
+        }
+        @keyframes marching-ants {
+            to {
+                stroke-dashoffset: -8;
+            }
+        }
+        .selection {
+            fill-opacity: 0.1;
+            stroke: black;
+            stroke-opacity: 0.7;
+            stroke-dasharray: 5 3;
+            animation: marching-ants 2s linear infinite;
+        }
+
+
+
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Meta</h1>
+    </header>
+    
+    <script type="module" src="main.js"></script>
+    <h2>Summary</h2>
+    <div id="stats"></div>
+
+    <h2>Commits by time of day</h2>
+    <div id="chart"></div>
+
+    <p id="selection-count">No commits selected</p>
+    <dl id="language-breakdown" class="stats"></dl>
+    
+    
+</body>
+</html>

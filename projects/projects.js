@@ -146,7 +146,7 @@ const projectsContainer = document.querySelector('.projects');
 const title = document.querySelector('.projects-title');
 const searchInput = document.querySelector('.searchBar');
 let selectedIndex = -1;
-let currentFilteredProjects = [...projects]; // Keep track of filtered projects
+let currentFilteredProjects = [...projects]; 
 
 renderProjects(projects, projectsContainer, 'h2');
 title.textContent = `${projects.length} Projects`;
