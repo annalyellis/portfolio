@@ -77,7 +77,113 @@
             animation: marching-ants 2s linear infinite;
         }
 
+        .commit-progress{
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
 
+        .commit-progress{
+            white-space: nowrap;
+        }
+
+        .commit-progress input {
+            width: 200px;
+        }
+
+        .commit-progress time,
+        .time-filter em{
+            display: block;
+            font-size: 0.85em;
+            margin-left: 0.5em;
+        }
+
+        .commit-progress em{
+            color: gray;
+            font-style: italic;
+        }
+
+        #files {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
+        #files > div {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: subgrid;
+        }
+
+        #files dt {
+            grid-column: 1;
+        }
+
+        #files dd {
+            grid-column: 2;
+        }
+        .loc {
+            display: flex;
+            width: 0.5em;
+            aspect-ratio: 1;
+            background-color: var(--color, steelblue);
+            border-radius: 50%;
+        }
+
+        /* Let dots wrap tightly */
+        #files dd {
+            grid-column: 2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            align-content: start;
+            gap: 0.15em;
+            padding-top: 0.6em;
+            margin-left: 0;
+        }
+
+        /* Ensure file name and line count are styled nicely */
+        #files dt > small {
+            display: block;
+            font-size: 0.75em;
+            color: gray;
+            margin-top: 0.25em;
+        }
+        #scrolly-1 {
+            position: relative;
+            display: flex;
+            gap: 1rem;
+
+            > * {
+                flex: 1;
+            }
+        }
+
+        /* Make the chart section take up more space */
+        #scrolly-1 > :first-child {
+            flex: 1; /* chart gets more space */
+        }
+
+        #scrolly-1 > :last-child {
+            flex: 2.5; /* story gets less space */
+        }
+
+        #scatter-story {
+            position: relative;
+        }
+
+        #scatter-plot {
+            position: sticky;
+            top: 0;
+            left: 0;
+            bottom: auto;
+            height: 50vh;
+        }
+        #scrolly-1 .step {
+            font-size: 0.7em;  /* or 0.8em for even smaller */
+            line-height: 1.4;
+            padding: 1em;
+        }
+    
 
       </style>
 </head>
@@ -86,16 +192,32 @@
         <h1>Meta</h1>
     </header>
     
-    <script type="module" src="main.js"></script>
+    
     <h2>Summary</h2>
     <div id="stats"></div>
 
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id = "scrolly-1">
+        <div id = "scatter-story"></div>
+        <div id = "scatter-plot">
+            <div id="chart"></div>
+        </div>
+    </div>
 
     <p id="selection-count">No commits selected</p>
     <dl id="language-breakdown" class="stats"></dl>
     
-    
+    <div class="commit-progress">
+        <label for="commit-progress">Filter by time:</label>
+        <input type="range" id="commit-progress" min="0" max="100" value="100" />
+        <div>
+            <p> show commits until:</p>
+            <time id="commit-time">11:59</time>
+          <em id="any-time">(any time)</em>
+        </div>
+      </div>
+    <dl id="files"></dl>
+<script type="module" src="main.js"></script>
 </body>
 </html>
+
